@@ -62,6 +62,11 @@ func LoadECPublicKeyFromPEM(path string) ([]byte, string, error) {
 	return parsePKIXPublicKey(block.Bytes)
 }
 
+// export parsePKCS8ECPrivateKey
+func ParsePKCS8ECPrivateKey(der []byte) (keyHex []byte, curveName string, err error) {
+	return parsePKCS8ECPrivateKey(der)
+}
+
 // parseECPrivateKey is a copy of x509.ParseECPrivateKey, supported secp256k1 and sm2p256v1
 func parsePKCS8ECPrivateKey(der []byte) (keyHex []byte, curveName string, err error) {
 
