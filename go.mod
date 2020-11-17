@@ -1,9 +1,10 @@
-module github.com/suutaku/go-sdk
+module github.com/FISCO-BCOS/go-sdk
 
 go 1.13
 
 require (
 	github.com/FISCO-BCOS/crypto v0.0.0-20200202032121-bd8ab0b5d4f1
+	github.com/FISCO-BCOS/go-sdk v0.10.2
 	github.com/bitherhq/go-bither v1.7.1
 	github.com/ethereum/go-ethereum v1.9.10
 	github.com/google/uuid v1.1.1
